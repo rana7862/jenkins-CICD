@@ -18,10 +18,10 @@ pipeline{
           sh 'npm install'
          }
       }
-     stage('Build') {
+     stage('Test') {
         steps {
-           sh 'npm run build'
-         }
+           sh 'npm run test'
+      }
       }
      stage('Package with docker'){
        steps {
